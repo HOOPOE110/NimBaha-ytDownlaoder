@@ -1,17 +1,17 @@
-import os, sys
+# import os, sys
 
-base_path = getattr(sys, "_MEIPASS", os.path.dirname(__file__))
+# base_path = getattr(sys, "_MEIPASS", os.path.dirname(__file__))
 
-# ffmpeg path
-ffmpeg_path = os.path.join(base_path, "ffmpeg.exe")
+## ffmpeg path
+# ffmpeg_path = os.path.join(base_path, "ffmpeg.exe")
 
-# Playwright browsers path
-os.environ["PLAYWRIGHT_BROWSERS_PATH"] = os.path.join(base_path, "playwright-browsers")
+## Playwright browsers path
+# os.environ["PLAYWRIGHT_BROWSERS_PATH"] = os.path.join(base_path, "playwright-browsers")
 
 
 import ffmpeg
 
-# ffmpeg_path = "./ffmpeg.exe"
+ffmpeg_path = "./ffmpeg.exe"
 
 def merge(aud,vid,output):
     video_file = vid
@@ -34,5 +34,6 @@ def merge(aud,vid,output):
     #     return
 
     ffmpeg.output(input_video, input_audio, output_file, vcodec='copy', acodec='copy').run(cmd=ffmpeg_path)
+
 
 # merge()
