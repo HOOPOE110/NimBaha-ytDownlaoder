@@ -9,6 +9,6 @@ and also it's give you information about each file such as file size extension ,
 we're using Playwright in order to make the links Nim-Baha with a website named [**Monasef**](https://monasef.ir/ ) be sure to take a look at it
 and also using ffmpeg to merge audio and video file together so it's a complete file :)  
 # Download
-If you are familiar with running python files just clone the repo and run the "*main.py*" file (export that ffmpeg.7z file and also you need to have playwright installed with its chromium-headless-shell browser)
+If you are familiar with running python files just clone the repo and run the "*main.py*" file (export that ffmpeg.7z file and also you need to have playwright installed with its chromium-headless-shell browser)  
 --**WINDOWS**--  
 I made a standalone exe file for windows with pyisntaller library so you can download it and run it without extra moves to run the file if you're on windows
